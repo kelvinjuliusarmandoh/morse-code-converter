@@ -38,6 +38,24 @@ Ensure you have the following installed:
     ```bash
     pip install -r requirements.txt
     ```
+4. **Set the `SECRET_KEY`**:
+
+    In the `main.py` file, the Flask application requires a `SECRET_KEY` for session management and security purposes. You can set the `SECRET_KEY` as follows:
+
+    ```python
+    import os
+    from flask import Flask
+
+    app = Flask(__name__)
+    app.config['SECRET_KEY'] = os.urandom(24)  # Generate a random secret key
+    ```
+
+    Alternatively, you can set a fixed `SECRET_KEY` for development purposes:
+
+    ```python
+    app.config['SECRET_KEY'] = 'your_secret_key_here'
+    ```
+    
 ### Running the Application
 
 1. **Set the FLASK_APP environment variable**:
