@@ -61,6 +61,7 @@ Ensure you have the following installed:
 3. Click the appropriate button to get the result.
 
 ## Project Structure
+```
 morse-code-converter/
 ├── app.py # Main application file
 ├── requirements.txt # Python dependencies
@@ -75,3 +76,4 @@ morse-code-converter/
 ├── screenshots/ # Screenshots for README
 │ └── home_page.png
 └── README.md # Project README file
+```
