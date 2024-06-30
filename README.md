@@ -63,17 +63,9 @@ Ensure you have the following installed:
 ## Project Structure
 ```
 morse-code-converter/
-├── app.py # Main application file
+├── main.py # Main application file
 ├── requirements.txt # Python dependencies
 ├── templates/ # HTML templates
-│ ├── base.html
 │ ├── index.html
-├── static/ # Static files (CSS, JS, images)
-│ ├── css/
-│ │ └── styles.css
-│ ├── js/
-│ │ └── scripts.js
-├── screenshots/ # Screenshots for README
-│ └── home_page.png
 └── README.md # Project README file
 ```
