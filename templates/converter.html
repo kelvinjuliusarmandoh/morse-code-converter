@@ -1,0 +1,17 @@
+{% from 'bootstrap5/form.html' import render_form %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Converter</title>
+    {{ bootstrap.load_css() }}
+</head>
+<body>
+    {{ render_form(convert_form) }}
+    {% if result %}
+    <div class="alert alert-info mt-3" role="alert">
+            Conversion Result: {{ result }}
+    </div>
+    {% endif %}
+</body>
+</html>

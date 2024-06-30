@@ -1,0 +1,17 @@
+{% from 'bootstrap5/form.html' import render_form %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inverter</title>
+    {{ bootstrap.load_css() }}
+</head>
+<body>
+    {{ render_form(inverter_form) }}
+    {% if result %}
+    <div class="alert alert-info mt-3" role="alert">
+            Inversion Result: {{ result }}
+    </div>
+    {% endif %}
+</body>
+</html>
